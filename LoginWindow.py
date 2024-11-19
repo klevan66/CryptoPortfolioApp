@@ -35,11 +35,21 @@ class LoginForm:
         self.heading.place(x=30, y=80, width=500, height=30)
 
         # sign in image
-
+        ##self.signInImage =
+        ##loginPhoto
+        self.signInImageLabel= Label(self.loginFrame, bg="#040405")
+        ##self.selfInImageLabel.image= loginPhoto
+        self.signInImageLabel.place(x=620, y=130)
+        
+        self.signInImageLabel = Label(self.loginFrame, text="Sign In" , bg="#040405", fg="white", font=("yu gothic ui", 17,"bold"))
+        self.signInImageLabel.place(x=650,y=240)
         # username
-        self.usernameLabel = Label(self.loginFrame, text="Username", bg="black", font=("arial", 13, "bold"), fg="black")
+        self.usernameLabel = Label(self.loginFrame, text="Username", bg="black", font=("arial", 13, "bold"), fg="#4f4e4d")
         self.usernameLabel.place(x=550, y=300)
-        self.usernameEntry = Entry(self.loginFrame, highlightthickness=0)
+
+        self.usernameEntry = Entry(self.loginFrame, highlightthickness=0, relief=FLAT, bg="#17b217", fg="#6b6a69", font=("arial", 13, "bold"))
+        self.usernameEntry.place(x=580, y=335, width=270)
+
 
 
 
