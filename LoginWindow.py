@@ -49,6 +49,17 @@ class LoginForm:
 
         self.usernameEntry = Entry(self.loginFrame, highlightthickness=0, relief=FLAT, bg="#17b217", fg="#6b6a69", font=("arial", 13, "bold"))
         self.usernameEntry.place(x=580, y=335, width=270)
+        self.usernameLine = Canvas(self.loginFrame, width=300, height=2.0, bg="white", highlightthickness=0)
+        self.usernameLine.place(x=550, y=359)
+
+        # password
+        self.passwordLabel = Label(self.loginFrame, text="Password", bg="black", font=("arial", 13, "bold"), fg="#4f4e4d")
+        self.passwordLabel.place(x=550, y=380)
+
+        self.passwordEntry = Entry(self.loginFrame, highlightthickness=0, relief=FLAT, bg="#17b217", fg="#6b6a69", font=("arial", 13, "bold"))
+        self.passwordEntry.place(x=580, y=415, width=270)
+        self.passwordLine = Canvas(self.loginFrame, width=300, height=2.0, bg="white", highlightthickness=0)
+        self.passwordLine.place(x=550, y=439)
 
 
 
